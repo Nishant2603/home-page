@@ -1,0 +1,245 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap); 
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap); 
+@import url(https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap);
+html, header {
+    scroll-behavior: smooth;
+}
+body { 
+    padding: 0; 
+    margin: 0px;
+    overflow: scroll; 
+    font-family: 'Josefin Sans', sans-serif; 
+    scroll-behavior: smooth;
+} 
+header { 
+        background-color: chocolate; 
+        overflow: hidden;
+} 
+#Logo { 
+        font-family: 'Source Code Pro', monospace; 
+} 
+ul { 
+        width: auto; 
+        float: right; 
+        margin-top: 8px; 
+} 
+li { 
+        display: inline-block; 
+} 
+ul li a {
+    transition: .5s;
+}
+.SE { 
+        text-align: center; 
+        text-decoration: none; 
+        padding: 15px 30px; 
+        color: aliceblue;
+}
+.SE:hover {
+    color: black;
+    background-color: antiquewhite;
+}
+.menu-btn {
+    position: relative;
+    display: flex;
+    float: right;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    justify-content: center;
+    align-items: center;
+}
+.menu-btn_burger {
+    width: 20px;
+    height: 3px;
+    background-color: aliceblue;
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before,
+.menu-btn_burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: aliceblue;
+    transition: all .5s ease-in-out;
+}
+.menu-btn_burger::before {
+    transform: translateY(-6px);
+}
+.menu-btn_burger::after {
+    transform: translateY(6px);
+}
+/* ANIMATION */
+.menu-btn.open .menu-btn_burger {
+    transform: translateX(-20px);
+    background: transparent;
+    box-shadow: none;
+}
+.menu-btn.open .menu-btn_burger::before {
+    transform: rotate(50deg) translate(0.1px, -0.1px);
+}
+.menu-btn.open .menu-btn_burger::after {
+    transform: rotate(-50deg) translate(0.1px, 0.1px);
+}
+
+#secborder{
+
+    outline: 2px solid rgb(177, 14, 14);
+}
+.S1 {
+   /* outline: 2px solid black; */
+    background-image: url(Nishant.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.S1 {
+    background-image: url(Nishant.png);
+    padding: 190px 100px;
+    /* position:fixed; */
+   /* width:100vw; */
+    /* z-index: -1; */ 
+   /* height:100vh; */
+}
+#tit {
+    position: relative;
+    font-size: 3vw;
+    color: transparent;
+    -webkit-text-stroke: 0.1vw whitesmoke;
+    text-transform: uppercase;
+    margin-top:30vh;
+}
+#tit::before {
+    position: absolute;
+    content: attr(data-text);
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: chocolate;
+    -webkit-text-stroke: 0vw;
+    overflow: hidden;
+    animation: animate 10s linear infinite;
+}
+@keyframes animate {
+    0%,10%,100% {
+        width: 0;
+    }
+    70%,90% {
+        width: 100%;
+    }
+}
+
+.RI h1 {
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    font-family: 'Titillium Web', sans-serif;
+    position: relative;
+    margin-left: 10px;
+    color: lightblue;
+}
+#S2 {
+    background: linear-gradient(lightseagreen 20%, deepskyblue 80%);
+    width:100vw;
+    overflow: hidden;
+} 
+h5 {
+    text-align: center;
+    font-size: 50px;
+}
+.line1 {
+    width: 50%;
+    height: 50px;
+    background-color: lightgray;
+} 
+#youtube {
+    width: 30%;
+    height: 150px;
+    position: relative;
+    margin-left: 30%;
+    bottom: 50px;
+}
+.line1:hover {
+    background-color: rgb(219, 135, 135);
+}
+.line2 {
+    width: 50%;
+    height: 50px;
+    background-color: blanchedalmond;
+    position: relative;
+    left: 640px;
+    bottom: 50px;              
+}
+#instagram {
+    width: 60%;
+    height: 150px;
+    position: relative;
+    margin-left: 19%;
+    bottom: 50px;
+}
+.line2:hover {
+    background-color: rgb(252, 191, 101);
+}
+#subtitle {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    color: blanchedalmond;
+}
+#section-about {
+    overflow: hidden;
+    background-color: lightslategrey;
+    padding: 0%;
+    width: 100%;
+    height: 70%;
+}
+#about-me {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 100;
+    color: blanchedalmond;
+}
+#section-videos {
+    background: linear-gradient(lightblue 75%, aliceblue 25%);
+    overflow: hidden;
+} 
+#course {
+    background-color: goldenrod;
+    font-size: 17px;
+    padding: 7px 15px;
+}
+#Videos {
+    background-color: goldenrod;
+    font-size: 17px;
+    padding: 7px 15px;
+}
+.Home { 
+    text-align: center; 
+    text-decoration: none; 
+    padding: 15px 30px; 
+    color: black;
+    background-color: blanchedalmond;
+}
+.Last {
+    padding-left: 35px;
+    padding-right: 30px;
+    color: rgb(87, 220, 243);
+    text-decoration: none;
+    font-size: 18px;
+}
+.Last:hover {
+    font-size: 20px;
+}
+.My-Logo {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    color: navajowhite;
+    padding-right: 210px;
+    text-decoration: none;
+}
